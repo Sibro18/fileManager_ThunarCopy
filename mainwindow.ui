@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="toolWidget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="ButprVisFold">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>34</width>
+           <height>26</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButnVisFold">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>34</width>
+           <height>26</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButparFold">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>34</width>
+           <height>26</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Buthome">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>34</width>
+           <height>26</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButSearch">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="dirsAfilesWidget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QListView" name="listViewMenu">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="listView">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>1</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuLocation_selector">
+     <property name="title">
+      <string>Location selector</string>
+     </property>
+     <addaction name="actionButton_Style_2"/>
+     <addaction name="actionEntry_Style_2"/>
+    </widget>
+    <widget class="QMenu" name="menuSide_Pane">
+     <property name="title">
+      <string>Side Pane</string>
+     </property>
+     <addaction name="actionShortcuts"/>
+     <addaction name="actionTree"/>
+     <addaction name="separator"/>
+     <addaction name="actionImage_Preview"/>
+    </widget>
+    <widget class="QMenu" name="menuArrange_Items">
+     <property name="title">
+      <string>Arrange Items</string>
+     </property>
+     <addaction name="actionBy_Names"/>
+     <addaction name="actionBy_Size"/>
+     <addaction name="actionBy_Types"/>
+     <addaction name="actionBy_Modification_Date"/>
+     <addaction name="separator"/>
+     <addaction name="actionAscending"/>
+     <addaction name="actionDescending"/>
+     <addaction name="separator"/>
+     <addaction name="actionToggle_Sort_Order"/>
+    </widget>
+    <addaction name="actionReaload"/>
+    <addaction name="actionSplit_View"/>
+    <addaction name="separator"/>
+    <addaction name="menuLocation_selector"/>
+    <addaction name="menuSide_Pane"/>
+    <addaction name="actionstatus_bar"/>
+    <addaction name="actionMenubar"/>
+    <addaction name="actionConfigure_Toolbar"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Hiden_Files"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_File_HighLight"/>
+    <addaction name="separator"/>
+    <addaction name="menuArrange_Items"/>
+    <addaction name="separator"/>
+    <addaction name="actionZoom_In"/>
+    <addaction name="actionZoom_Out"/>
+    <addaction name="actionNormal_Size"/>
+    <addaction name="separator"/>
+    <addaction name="actionIcon_View"/>
+    <addaction name="actionList_View"/>
+   </widget>
+   <widget class="QMenu" name="menuGo">
+    <property name="title">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menubookMarks">
+    <property name="title">
+     <string>Bookmarks</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuGo"/>
+   <addaction name="menubookMarks"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReaload">
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionButton_Style">
+   <property name="text">
+    <string>Button Style</string>
+   </property>
+  </action>
+  <action name="actionEntry_Style">
+   <property name="text">
+    <string>Entry Style</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="text">
+    <string>Shortcuts</string>
+   </property>
+  </action>
+  <action name="actionTree">
+   <property name="text">
+    <string>Tree</string>
+   </property>
+  </action>
+  <action name="actionImage_Preview">
+   <property name="text">
+    <string>Image Preview</string>
+   </property>
+  </action>
+  <action name="actionstatus_bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Statusbar</string>
+   </property>
+  </action>
+  <action name="actionMenubar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Menubar</string>
+   </property>
+  </action>
+  <action name="actionConfigure_Toolbar">
+   <property name="text">
+    <string>Configure the Toolbar</string>
+   </property>
+  </action>
+  <action name="actionShow_Hiden_Files">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Hidden Files</string>
+   </property>
+  </action>
+  <action name="actionShow_File_HighLight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show File Highlight</string>
+   </property>
+  </action>
+  <action name="actionBy_Names">
+   <property name="text">
+    <string>By Names</string>
+   </property>
+  </action>
+  <action name="actionBy_Size">
+   <property name="text">
+    <string>By Size</string>
+   </property>
+  </action>
+  <action name="actionBy_Types">
+   <property name="text">
+    <string>By Type</string>
+   </property>
+  </action>
+  <action name="actionBy_Modification_Date">
+   <property name="text">
+    <string>By Modification Date</string>
+   </property>
+  </action>
+  <action name="actionAscending">
+   <property name="text">
+    <string>Ascending</string>
+   </property>
+  </action>
+  <action name="actionDescending">
+   <property name="text">
+    <string>Descending</string>
+   </property>
+  </action>
+  <action name="actionToggle_Sort_Order">
+   <property name="text">
+    <string>Toggle Sort Order</string>
+   </property>
+  </action>
+  <action name="actionSplit_View">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Split View</string>
+   </property>
+  </action>
+  <action name="actionButton_Style_2">
+   <property name="text">
+    <string>Buttons Style</string>
+   </property>
+  </action>
+  <action name="actionEntry_Style_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Entry Style</string>
+   </property>
+  </action>
+  <action name="actionZoom_In">
+   <property name="text">
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="actionZoom_Out">
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionNormal_Size">
+   <property name="text">
+    <string>Normal Size</string>
+   </property>
+  </action>
+  <action name="actionIcon_View">
+   <property name="text">
+    <string>Icon View</string>
+   </property>
+  </action>
+  <action name="actionList_View">
+   <property name="text">
+    <string>List View</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
